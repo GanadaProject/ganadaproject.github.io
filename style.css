@@ -53,7 +53,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #979fb1;
-    background-color: #000106;
+    background-color: #020c40;
     overflow-x: hidden;
     word-break: keep-all;
 }
@@ -77,7 +77,7 @@ body pre {
     max-width: 100%;
     max-height: 100%;
     width: auto;
-    height: auto;
+    height: 50rem;
 }
 
 .doc-loader {
@@ -100,7 +100,7 @@ body pre {
 }
 
 .content-1170 {
-    width: 1170px;    
+    width: 1280px;    
 }
 
 .content-960 {
@@ -117,7 +117,7 @@ body pre {
 
 .section-wrapper {
     position: relative;
-    padding: 200px 0 115px 0;
+    padding: 6rem 0;
 }
 
 
@@ -127,12 +127,16 @@ body pre {
 
 .header-holder {
     z-index: 99 !important;
-    background-color: rgba(0,1,6,0.5);
-    backdrop-filter: blur(10px);
+    background-color: rgba(2,12,64,0.5);
     width: 100% !important;
     top: 0;
+    height:80px;
+    bottom:-1px;
     position: fixed;
     -webkit-transform: translateZ(0);    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
 }
 
 .sticky-wrapper {
@@ -342,39 +346,16 @@ body .sm-clean li.current_page_item > a {
     position: relative;    
 }
 
-.page-title-holder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #2044f9;
-    width: 285px;
-    display: inline-block;
-    z-index: 98;
-    height: 130px;
-}
-
-.page-title-holder:after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 130px 60px 0 0;
-    border-color: #2044f9 transparent transparent transparent;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%);
-}
-
 .section h3.entry-title {
-    font-size: 1rem;
-    line-height: 149%;
-    font-weight: 400;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 100%;
+    font-weight: 700;
     word-break: break-word;
-    text-align: center;
+    text-align: left;
     color: #f7f8f9;
-    letter-spacing: 2px;
-    margin-top: 32px;
+    letter-spacing: 0;
+    margin-bottom:2rem;
 }
 
 .page .page-content {
@@ -443,7 +424,7 @@ body .sm-clean li.current_page_item > a {
 }
 
 body .social a {
-    color: #000 !important;
+    color: #979fb1 !important;
     transition: all .3s ease;
 }
 
@@ -798,10 +779,8 @@ a.button-dot:hover:before {
 ====================================== */
 
 #home {    
-    background-image: url(images/hero_image_01.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(17,19,20);
+    background: linear-gradient(0deg, rgba(17,19,20,1) 0%, rgba(2,12,64,1) 100%);
     min-height: calc(100vh - 77px);    
     display: flex;
 }
@@ -810,11 +789,21 @@ a.button-dot:hover:before {
     margin: auto;
     padding: 0;
 }
+.hero-image{
+    position:absolute;
+    display:inline;
+    min-height: calc(100vh - 77px);    
+    width:100%;
+    background-image: url(images/hero_image_01.png);
+    background-position: center;
+    background-size:fill;
+}
 
 h3.hero {
     color: #f7f8f9;
     font-size: 3rem;
     line-height: 125%;
+    padding-left:0.5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -822,9 +811,17 @@ p.hero {
     color: #979fb1;
     font-size: 1rem;
     line-height: 1.5;
+    padding-left:0.5rem;
     margin-bottom: 4rem;
 }
 
+.glass-panel{
+    padding:2rem;
+    background-color: rgba(2,12,64,0.5);
+    border:1px solid rgba(2,12,64,0.5);
+    border-radius:1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);}
 
 /* ===================================
     4. Services Section CSS
@@ -832,7 +829,7 @@ p.hero {
 
 #services {
     background-image: url(images/on_black_left.png);
-    background-color: #020c40;
+    background-color: #111314;
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: auto;
@@ -878,9 +875,14 @@ p.hero {
     background-size: auto 100%;
 }
 
-.service-bi {
-    height:10rem;
+.member-info .member-content .service-bi img{
+    height:10rem!important;
+    position:relative;
 }
+
+.service-fairway{display:block;}
+.service-fairway-m{display:none;}
+
 
 
 /* ===================================
@@ -1298,24 +1300,28 @@ p.hero {
 .member-content p{
     margin-bottom:0;
     padding:0;
-    font-size:0.875rem;
+    font-size:1rem;
 }
 
 .member-info {
-    width: 380px;
-    background-color: #f7f8f9;
-    padding: 65px 110px;
+    width: 28rem;
+    padding: 3rem 8rem;
     display: inline-block;
     vertical-align: middle;
-    margin-left: -130px;
+    margin-left: -120px;
     text-align: left;
     position: relative;
     z-index: 31;
+    background-color: rgba(2,12,64,0.5);
+    border:1px solid rgba(2,12,64,0.5);
+    border-radius:1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .member-right .member-info {
     margin-left: auto;
-    margin-right: -130px;
+    margin-right: -120px;
 }
 
 .member-postition {
@@ -2120,7 +2126,8 @@ footer .footer-social-divider:before {
 @media screen and (max-width: 1270px) {
 
     .member-info {    
-        padding: 65px 80px;    
+        padding: 4rem;    
+        text-align:left;
     }
 
 }
@@ -2135,7 +2142,11 @@ footer .footer-social-divider:before {
 }
 
 @media screen and (max-width: 1024px) {   
-
+    .service-fairway{display:none;}
+    .service-fairway-m{display:block;}
+    .member-info {    
+        text-align:center;
+    }
     .sm-clean li {
         margin-right: 8px;
     }
@@ -2448,7 +2459,7 @@ footer .footer-social-divider:before {
 
     .button-holder {
         text-align: center !important;
-        margin-bottom: 8rem;
+        margin-bottom: 2rem;
     }
 
     .service-holder {
@@ -2507,14 +2518,14 @@ footer .footer-social-divider:before {
     .member img {
         display: block;
         margin: 0 auto;
-        width: 100% !important;
     }
 
     .member-info {
         display: block;
         margin: 0 auto !important;
         width: 80%;
-        padding: 10%;
+        padding: 8%;
+        top:-120px;
     }
 
     .member-social-holder {
@@ -2598,7 +2609,7 @@ footer .footer-social-divider:before {
     }
 
     .section-wrapper {
-        padding: 130px 0 30px 0;
+        padding: 120px 0 30px 0;
     }
 
     .page-title-holder:after {
@@ -2648,9 +2659,9 @@ footer .footer-social-divider:before {
     }
 
     .member-content {
-        font-size: 16px;
-        line-height: 170%;
-        margin-bottom: 50px;
+        font-size: 1rem;
+        line-height: 150%;
+        margin-bottom: 1rem;
     }
 
     .member-postition {
