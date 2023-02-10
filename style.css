@@ -55,6 +55,7 @@ body {
     color: #979fb1;
     background-color: #000106;
     overflow-x: hidden;
+    word-break: keep-all;
 }
 
 body a {
@@ -550,8 +551,10 @@ a.button:hover {
 
 a.button-dot {
     color: #f7f8f9 !important;
-    font-size: 16px;
+    font-size: 1rem;
     position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
 }
 
 a.button-dot:hover {
@@ -818,7 +821,7 @@ h3.hero {
 p.hero {
     color: #979fb1;
     font-size: 1rem;
-    line-height: 1.25;
+    line-height: 1.5;
     margin-bottom: 4rem;
 }
 
@@ -858,18 +861,25 @@ p.hero {
 }
 
 .service-num {
-    font-size: 264px;
+    font-size: 3rem;
     font-weight: 700;
-    color: #031779;
+    font-color:#020c40;
     text-shadow: -1px 0 #758098, 
         0 1px #758098, 
         1px 0 #758098, 
         0 -1px #758098;
     line-height: 100%;
-    height: 164px;
+    height: 30rem;
     overflow: hidden;
-    margin-bottom: ;
+    margin-bottom:2rem;
     -webkit-transform: translateZ(0);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.service-bi {
+    height:10rem;
 }
 
 
@@ -1285,6 +1295,12 @@ p.hero {
     margin-bottom: 35px;
 }
 
+.member-content p{
+    margin-bottom:0;
+    padding:0;
+    font-size:0.875rem;
+}
+
 .member-info {
     width: 380px;
     background-color: #f7f8f9;
@@ -1309,13 +1325,18 @@ p.hero {
 }
 
 .member-name {
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: 700;
-    color: #000;
+    color: #111314;
     line-height: 150%;
-    margin-bottom: 35px;
     margin-top: -5px;
+    margin-bottom:0;
     padding: 0;
+}
+
+.member-name-korean{
+    font-size:2rem;
+    margin-bottom: 1.5rem;
 }
 
 .member-social-holder {
@@ -2310,6 +2331,17 @@ footer .footer-social-divider:before {
         padding-bottom: 70px;
     }
 
+    .service-num {
+        line-height: 100%;
+        height: 30rem;
+        overflow: hidden;
+        margin-bottom:2rem;
+        -webkit-transform: translateZ(0);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+
     .single article {
         padding-top: 35px;
     }
@@ -2416,6 +2448,7 @@ footer .footer-social-divider:before {
 
     .button-holder {
         text-align: center !important;
+        margin-bottom: 8rem;
     }
 
     .service-holder {
