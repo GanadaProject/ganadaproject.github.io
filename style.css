@@ -186,6 +186,7 @@ body pre {
     margin-bottom: 6px;
     background-color: #f7f8f9;
     width: 22px;
+    border-radius:4px;
 }
 
 #toggle .second-menu-line {
@@ -201,8 +202,8 @@ body pre {
 }
 
 #toggle.on .second-menu-line {
-    /* -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0); */
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
 }
 
 #toggle .third-menu-line{        
