@@ -189,10 +189,10 @@ body pre {
 }
 
 #toggle .second-menu-line {
-    -webkit-transition: -webkit-transform 0.3s ease;
+    /* -webkit-transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;    
     -webkit-transform: translate3d(10px,0,0);
-    transform: translate3d(10px,0,0);
+    transform: translate3d(10px,0,0); */
 }
 
 #toggle:hover .second-menu-line {
@@ -2145,6 +2145,7 @@ footer .footer-social-divider:before {
 }
 
 @media screen and (max-width: 1024px) {   
+
     .service-fairway{display:none;}
     .service-fairway-m{display:block;}
     .member-info {    
@@ -2274,12 +2275,17 @@ footer .footer-social-divider:before {
     }
 
     .menu-wrapper {
-        width: 95%;
+        width: 90%;
     }
 
     .main-menu ul {
         width: 12em;
-    }        
+    }      
+
+    .header-logo img {
+        width: 64px;
+        height: auto;
+    }
 
     .toggle-holder {
         display: block;
