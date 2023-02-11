@@ -70,7 +70,7 @@ body a:hover {
 
 body p, 
 body pre {
-    margin-bottom: 13px;
+    margin-bottom: 2rem;
 }
 
 .font-korean {
@@ -342,6 +342,20 @@ body .sm-clean li.current_page_item > a {
     border-radius: 5px;
 }
 
+.copyright-holder{
+    color: #5A6378;
+    font-size:0.875rem;
+}
+
+.copyright-holder p{
+    margin:0;
+    padding:0;
+}
+
+.copyright-holder h4{
+    margin:0;
+    padding: 0 0 20px 0;
+}
 
 /* ===================================
     2.2 General Section CSS
@@ -360,7 +374,7 @@ body .sm-clean li.current_page_item > a {
     text-align: left;
     color: #f7f8f9;
     letter-spacing: 0;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
 }
 
 .page .page-content {
@@ -815,7 +829,6 @@ p.hero {
     font-size: 1rem;
     line-height: 1.5;
     padding-left:0.5rem;
-    margin-bottom: 4rem;
 }
 
 .glass-panel{
@@ -1280,10 +1293,13 @@ p.hero {
 
 #team {
     background-image: url(images/on_black_left.png);
-    background-color: #000000;
-    background-position: left center;
-    background-repeat: no-repeat;
+    background: rgb(17,19,20);
+    background: linear-gradient(0deg, rgba(17,19,20,1) 0%, rgba(2,12,64,1) 100%);
     background-size: auto;
+}
+
+#team .section-wrapper{
+    padding:4rem 0!important;
 }
 
 .member {
@@ -1323,6 +1339,22 @@ p.hero {
     -webkit-backdrop-filter: blur(10px);
 }
 
+.member-info-light {
+    width: 28rem;
+    padding: 3rem 8rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -120px;
+    text-align: left;
+    position: relative;
+    z-index: 31;
+    background-color: rgba(136,146,156,0.2);
+    border:1px solid rgba(136,146,156,0.5);
+    border-radius:1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 .member-right .member-info {
     margin-left: auto;
     margin-right: -120px;
@@ -1337,15 +1369,15 @@ p.hero {
 .member-name {
     font-size: 2rem;
     font-weight: 700;
-    color: #111314;
+    color: #f7f8f9;
     line-height: 150%;
     margin-top: -5px;
-    margin-bottom:0;
+    margin-bottom:-1rem;
     padding: 0;
 }
 
 .member-name-korean{
-    font-size:2rem;
+    font-size:1.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -1890,8 +1922,8 @@ body.blog {
 .contact-form {
     max-width: 100%;
     margin: 0 auto;
-    font-size: 22px;
-    color: #000;
+    font-size: 1rem;
+    color: #979fb1;
 }
 
 .contact-form p {
@@ -1901,31 +1933,31 @@ body.blog {
 .contact-form input[type=text], 
 .contact-form input[type=email], 
 .contact-form textarea {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
     border: 0;
-    font-size: 15px;
-    padding: 5px 0;
+    font-size: 1rem;
+    padding: 0.5rem 0;
     width: 100%;
-    line-height: 25px;
-    color: #000;
-    margin-bottom: 35px;
-    text-indent: 10px;
+    line-height: 150%;
+    color: #f7f8f9;
+    margin-bottom: 2rem;
+    text-indent: 0.5rem;
     background-color: transparent;
-    border-bottom: 3px solid;
+    border-bottom: 1px solid;
 }
 
 .contact-form textarea {
-    height: 150px;
+    height: 10rem;
 }
 
 .contact-form input[type=text]::placeholder, 
 .contact-form input[type=email]::placeholder, 
 .contact-form textarea::placeholder {
-    font-family: 'Rubik', sans-serif;
-    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #979fb1;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 25px;
     opacity: 1;
 }
@@ -1933,21 +1965,21 @@ body.blog {
 .contact-form input[type=text]:ms-input-placeholder, 
 .contact-form input[type=email]:ms-input-placeholder, 
 .contact-form textarea:ms-input-placeholder {
-    font-family: 'Rubik', sans-serif;
-    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #979fb1;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 25px;    
 }
 
 .contact-form input[type=text]::ms-input-placeholder, 
 .contact-form input[type=email]::ms-input-placeholder, 
 .contact-form textarea::ms-input-placeholder {
-    font-family: 'Rubik', sans-serif;
-    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #979fb1;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 25px;    
 }
 
 .contact-form input[name="your-name"] {
@@ -1980,8 +2012,10 @@ body.blog {
 }
 
 .contact-form input[type=submit]:hover {
-    background-color: #f7f8f9;
-    color: #2044f9;
+    background-color: rgba(0,0,0,0);
+    color: #6a82fb;
+    font-weight:700;
+    border:2px solid #6a82fb;
 }
 
 
@@ -2019,8 +2053,7 @@ footer ul {
 
 .footer-logo img {
     width: 88px;
-    height: 50px;
-    margin-bottom: 30px;
+    height: auto;
 }
 
 .footer-logo-divider {
@@ -2134,6 +2167,10 @@ footer .footer-social-divider:before {
         text-align:left;
     }
 
+    .member-info-light {
+        padding: 4rem;
+        text-align:left;
+    }
 }
 
 @media screen and (max-width: 1220px) {
@@ -2152,6 +2189,10 @@ footer .footer-social-divider:before {
     .member-info {    
         text-align:center;
     }
+    .member-info-light {
+        text-align:center;
+    }
+
     .sm-clean li {
         margin-right: 8px;
     }
@@ -2544,6 +2585,13 @@ footer .footer-social-divider:before {
         padding: 8%;
         top:-120px;
     }
+    .member-info-light {
+        display: block;
+        margin: 0 auto !important;
+        width: 80%;
+        padding: 8%;
+        top:-120px;
+    }
 
     .member-social-holder {
         right: 0 !important;
@@ -2618,7 +2666,7 @@ footer .footer-social-divider:before {
     }   
 
     .section h3.entry-title {
-        margin-top: 18px;
+        margin-top: 1rem;
     }
 
     .service-holder {
@@ -2678,7 +2726,7 @@ footer .footer-social-divider:before {
     .member-content {
         font-size: 1rem;
         line-height: 150%;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .member-postition {
