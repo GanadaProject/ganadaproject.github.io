@@ -2287,9 +2287,11 @@ footer .footer-social-divider:before {
         width: calc(318% / 4);
     }
 
+
+
     .section h3.entry-title {
         margin-bottom: 0 !important;
-        text-align:center;      
+        text-align:center;        
     }        
 
     .sticky-spacer {
@@ -2684,6 +2686,15 @@ footer .footer-social-divider:before {
 
     .section h3.entry-title {
         margin-top: 1rem;
+        font-size:2rem;
+    }
+
+    h3.hero{
+        font-size:2rem;
+    }
+
+    .member-content p{
+        font-size:0.875rem;
     }
 
     .service-holder {
