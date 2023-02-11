@@ -73,6 +73,10 @@ body pre {
     margin-bottom: 13px;
 }
 
+.font-korean {
+    font-family: 'Noto Sans KR', sans-serif!important;
+}
+
 .site-wrapper img {
     max-width: 100%;
     max-height: 100%;
@@ -350,7 +354,7 @@ body .sm-clean li.current_page_item > a {
 .section h3.entry-title {
     font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
-    line-height: 100%;
+    line-height: 125%;
     font-weight: 700;
     word-break: break-word;
     text-align: left;
@@ -374,18 +378,13 @@ body .sm-clean li.current_page_item > a {
     z-index: 30 !important;
 }
 
-.medium-text {
-    color: #000;
-    font-size: 60px;
-    line-height: 120%;
-    font-weight: 700;
-    padding-bottom: 35px;
-}
 
 .title-description-up {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 0;
-    letter-spacing: 2px;
+    letter-spacing: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 
 .info-text {
@@ -808,7 +807,6 @@ h3.hero {
     padding-left:0.5rem;
     margin-bottom: 0.5rem;
     font-family: 'Open Sans', sans-serif;
-    line-height: 100%;
     font-weight: 700;
 }
 
@@ -896,7 +894,8 @@ p.hero {
 
 #about {
     background-image: url(images/on_white_right.png);
-    background-color: #f7f8f9;
+    background: rgb(17,19,20);
+    background: linear-gradient(180deg, rgba(17,19,20,1) 0%, rgba(2,12,64,1) 100%);
     background-position: right center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -2232,7 +2231,8 @@ footer .footer-social-divider:before {
     }
 
     .section h3.entry-title {
-        margin-bottom: 0 !important;        
+        margin-bottom: 0 !important;
+        text-align:center;      
     }        
 
     .sticky-spacer {
