@@ -2364,7 +2364,6 @@ footer .footer-social-divider:before {
     .menu-holder {
         position: fixed;
         text-align: center;
-        background-color: #000000;
         right: -100%;
         top: 77px;
         transition: right .3s ease;
@@ -2372,6 +2371,11 @@ footer .footer-social-divider:before {
         width: 300px;
         overflow: auto;
         max-width: 100%;
+        z-index: 99 !important;
+        background-color: rgba(2,12,64,0.5);
+        -webkit-transform: translateZ(0);    
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }    
 
     .header-holder {
