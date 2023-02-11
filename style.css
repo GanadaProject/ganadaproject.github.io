@@ -46,6 +46,10 @@ version 1.2
 /* ===================================
     2. Global CSS
 ====================================== */
+br {
+    padding:0;
+    margin:0;
+}
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -75,6 +79,8 @@ body pre {
 
 .font-korean {
     font-family: 'Noto Sans KR', sans-serif!important;
+    word-break: keep-all;
+
 }
 
 .site-wrapper img {
@@ -345,11 +351,12 @@ body .sm-clean li.current_page_item > a {
 .copyright-holder{
     color: #5A6378;
     font-size:0.875rem;
+    line-height:125%;
 }
 
 .copyright-holder p{
     margin:0;
-    padding:0;
+    padding:0.5rem; 0;
 }
 
 .copyright-holder h4{
@@ -912,6 +919,11 @@ p.hero {
     background-position: right center;
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+#about img{
+    width:100%!important;
+    height:auto!important;
 }
 
 
@@ -1920,6 +1932,7 @@ body.blog {
     15. Contact Section CSS
 ====================================== */
 
+
 .contact-form {
     max-width: 100%;
     margin: 0 auto;
@@ -2545,7 +2558,7 @@ footer .footer-social-divider:before {
 
     .medium-text {
         font-size: 40px;
-        line-height: 105%;
+        line-height: 125%;
         padding-top: 10px;
     }
 
@@ -2597,9 +2610,10 @@ footer .footer-social-divider:before {
     .member-social-holder {
         right: 0 !important;
         left: 0 !important;
-        width: 100%;
+        width: 80%;
         text-align: center;
         padding: 25px 0;
+        margin:auto;
     }
 
     .skill-percent {
