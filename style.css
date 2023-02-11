@@ -79,7 +79,7 @@ body pre {
 
 .font-korean {
     font-family: 'Noto Sans KR', sans-serif!important;
-    word-break: keep-all;
+    word-break: keep-all!important;
 
 }
 
@@ -1959,6 +1959,7 @@ body.blog {
     margin-bottom: 2rem;
     text-indent: 0.5rem;
     background-color: transparent;
+    border-radius:0;
     border-bottom: 1px solid;
 }
 
@@ -2691,11 +2692,15 @@ footer .footer-social-divider:before {
 
     .section h3.entry-title {
         margin-top: 1rem;
-        font-size:2rem;
+        font-size: 1.5rem;
     }
 
     h3.hero{
         font-size:2rem;
+    }
+    
+    p{
+        font-size:0.875rem;
     }
 
     .member-content p{
@@ -2753,11 +2758,15 @@ footer .footer-social-divider:before {
     }
 
     .member-name {
-        font-size: 35px;
+        font-size: 2rem;
+    }
+
+    .member-name-korean{
+        font-size:1.25rem;
     }
 
     .member-content {
-        font-size: 1rem;
+        font-size: 0.875rem;
         line-height: 150%;
         margin-bottom: 2rem;
     }
