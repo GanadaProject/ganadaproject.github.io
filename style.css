@@ -359,7 +359,8 @@ body .sm-clean li.current_page_item > a {
     padding:0.5rem; 0;
 }
 
-.copyright-holder h4{
+.copyright-holder h5 {
+    font-size:1.5rem;
     margin:1rem 0;
     padding: 0 0 20px 0;
 }
@@ -2330,7 +2331,7 @@ footer .footer-social-divider:before {
 }
 
 @media screen and (max-width: 1020px) {   
-
+    
     #header-main-menu {
         padding-bottom: 70px;
     }
