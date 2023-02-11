@@ -185,7 +185,7 @@ body pre {
     height: 3px;
     margin-bottom: 6px;
     background-color: #f7f8f9;
-    width: 22px;
+    width: 24px;
     border-radius:4px;
 }
 
@@ -797,7 +797,8 @@ a.button-dot:hover:before {
     width:100%;
     background-image: url(images/hero_image_01.png);
     background-position: center;
-    background-size:fill;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 h3.hero {
