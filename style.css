@@ -822,6 +822,13 @@ a.button-dot:hover:before {
     background-repeat:no-repeat;
 }
 
+@media screen and (min-width: 1400px) {
+    .hero-image{
+        background-size:contain;
+    }
+    
+}
+
 h3.hero {
     color: #f7f8f9;
     font-size: 2.5rem;
