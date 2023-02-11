@@ -876,7 +876,7 @@ p.hero {
 }
 
 .member-info .member-content .service-bi img{
-    height:10rem!important;
+    height:10rem;
     position:relative;
 }
 
@@ -2518,6 +2518,12 @@ footer .footer-social-divider:before {
     .member img {
         display: block;
         margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .member-info .member-content .service-bi img{
+        height: auto;
     }
 
     .member-info {
