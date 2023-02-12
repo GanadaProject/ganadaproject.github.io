@@ -912,8 +912,9 @@ p.hero {
     background-size: auto 100%;
 }
 
-.member-info .member-content .service-bi img{
+.member-info .member-content img.service-bi {
     height:10rem;
+    
     position:relative;
 }
 
@@ -2632,7 +2633,7 @@ footer .footer-social-divider:before {
         height: auto;
     }
 
-    .member-info .member-content .service-bi img{
+    .member-info .member-content img.service-bi{
         height: auto;
     }
 
