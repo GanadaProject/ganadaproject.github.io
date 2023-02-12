@@ -2089,8 +2089,8 @@ footer ul {
 .footer {
     font-size: 16px;
     line-height: 36px;
-    padding-top: 75px;
-    padding-bottom: 60px;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
     clear: both;
     color: #f7f8f9;
     text-align: center;
