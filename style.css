@@ -1963,7 +1963,10 @@ body.blog {
 /* ===================================
     15. Contact Section CSS
 ====================================== */
+#contact .social{
 
+    margin: 0 2rem 0 0;
+}
 
 .contact-form {
     max-width: 100%;
