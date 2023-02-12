@@ -349,20 +349,26 @@ body .sm-clean li.current_page_item > a {
 }
 
 .copyright-holder{
-    color: #5A6378;
+    color: #979fb1;
     font-size:0.875rem;
     line-height:125%;
 }
 
 .copyright-holder p{
     margin:0;
-    padding:0.5rem; 0;
+    padding:0.5rem 0;
 }
 
 .copyright-holder h5 {
     font-size:1.5rem;
     margin:1rem 0;
     padding: 0 0 20px 0;
+}
+
+.copyright-line{
+    margin-top:2rem;
+    font-size:0.875rem;
+    color:#5A6378;
 }
 
 /* ===================================
@@ -2079,7 +2085,7 @@ footer ul {
 }
 
 .footer-content {    
-    width: 900px;
+    text-align:left;
 }
 
 .footer-logo img {
