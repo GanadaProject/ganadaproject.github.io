@@ -1965,7 +1965,6 @@ body.blog {
     15. Contact Section CSS
 ====================================== */
 #contact .social{
-
     margin: 0 2rem 0 0;
 }
 
@@ -2052,7 +2051,7 @@ body.blog {
     vertical-align: middle;
     text-decoration: none;
     transition: all .2s linear;
-    margin-bottom: 17px;
+    margin-bottom: 1rem;
     display: block;
     width: 100%;
     line-height: 35px;
@@ -2689,6 +2688,20 @@ footer ul {
         text-align: center;
     }
 
+    #contact .social{
+        margin: 0 1rem;
+    }
+
+    .contact-form {
+        max-width: 80%;
+        margin: 2rem auto;
+        font-size: 1rem;
+        color: #979fb1;
+    }
+
+    .contact-form input[type=submit] {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 767px) {    
